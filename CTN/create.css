@@ -1,0 +1,157 @@
+/* create.css - consistent with login.css style */
+
+body.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.logo-img {
+  width: 80px;
+  margin-bottom: 0.20rem;
+  margin-top: -1; /* Reduced space between logo and title */
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #93c23e;
+  margin-bottom: 0.10rem;
+  margin-top: 0;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  margin-bottom: 0.rem;
+  color: #666;
+}
+
+.subtext a {
+  color: #93c23e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.subtext a:hover {
+  text-decoration: underline;
+}
+
+.signup-form {
+  text-align: left;
+}
+
+.signup-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Added for consistent sizing */
+}
+
+.signup-form input:focus {
+  border-color: #93c23e;
+  outline: none;
+}
+
+.agreement-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between checkbox and text */
+  margin-top: 0.5rem; /* optional spacing above */
+}
+
+/* Style the checkbox square */
+.agreement-checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  flex-shrink: 0;
+  margin: 0;
+  transform: translateY(-2px); /* Move checkbox up slightly */
+}
+
+/* Fill checkbox with green when checked */
+.agreement-checkbox input[type="checkbox"]:checked {
+  background-color: #93c23e;
+  border-color: #93c23e;
+}
+
+/* Add a white checkmark when checked */
+.agreement-checkbox input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+
+.agreement-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+.agreement-text a {
+  color: #93c23e;
+  text-decoration: none;    
+  font-weight: 600;
+}
+
+
+.agreement-text a:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #93c23e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding included in width */
+  display: block;          /* Make button behave like block element */
+  margin-top: 1rem;        /* Space above the button */
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #7ca633;
+}

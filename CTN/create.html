@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cedars Tech News Signup</title>
+  <link rel="stylesheet" href="create.css" />
+</head>
+<body class="centered">
+  <div class="form-container">
+    <img src="images/logo.png" alt="Logo" class="logo-img" />
+    <h1 class="logo-text">Cedars Tech News</h1>
+    <p class="subtext">
+      Already have an account? 
+      <a href="login.html">Sign in here</a>
+    </p>
+
+    <form class="signup-form" action="#" method="post">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="second-name">Second Name</label>
+      <input type="text" id="second-name" name="second-name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="agreement-checkbox">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms" class="agreement-text">
+          By clicking the <strong>Sign Up</strong> button, I agree to the 
+          <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="submit-button">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>

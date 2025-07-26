@@ -1,0 +1,64 @@
+/* style.css - Global Styling */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Buttons */
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: #93c23e;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: #7ea331;
+  transform: translateY(-1px);
+}
+
+/* News Card Component */
+.news-card {
+  background: linear-gradient(to right, #2c3e50, #000000);
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.news-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.news-card p {
+  margin: 0;
+  font-size: 1rem;
+}
